@@ -23,7 +23,8 @@
 
 /* Create an active/current tablink class */
 .tabs button.active {
-  background-color: #ccc;
+  background-color: #208171;
+  color: #fff;
 }
 
 /* Style the tab content */
@@ -39,4 +40,8 @@
   font-size: 1rem;
   margin-left: 0.5rem;
   vertical-align: middle;
+}
+
+.active .text-success {
+    color: #fff !important;
 }
