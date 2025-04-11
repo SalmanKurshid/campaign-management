@@ -13,6 +13,7 @@ import { CampaignSetupComponent } from './test/campaign-setup/campaign-setup.com
 import { CreativeSpecificationsComponent } from './test/creative-specifications/creative-specifications.component';
 import { ContextualTriggersComponent } from './test/contextual-triggers/contextual-triggers.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CampaignDetailsComponent } from './test/campaign-details/campaign-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CampaignManagerComponent,
     CampaignSetupComponent,
     CreativeSpecificationsComponent,
-    ContextualTriggersComponent
+    ContextualTriggersComponent,
+    CampaignDetailsComponent
   ],
   imports: [
     BrowserModule,

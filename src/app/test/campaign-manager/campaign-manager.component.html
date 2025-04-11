@@ -22,8 +22,9 @@
 
             <!-- <div *ngIf="currentTab === 'contextual-triggers'"> -->
             <div style="text-align:right">
+                <!-- <button type="submit" class="btn btn-success" *ngIf="showSkipValidations" (click)="skipValidations()">Skip Validations</button> -->
                 <button type="submit" class="btn btn-light" (click)="saveAsDraft()">Save As Draft</button>
-                <button type="submit" class="btn btn-success" (click)="submitAll()">Next Step</button>
+                <button type="submit" class="btn btn-success" (click)="goToNextStep()">Next Step</button>
             </div>
 
         </form>
