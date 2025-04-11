@@ -1,0 +1,14 @@
+<div [formGroup]="formGroup">
+    <label>Campaign Name</label>
+    <input formControlName="campaignName" />
+    <div class="validation-error" *ngIf="formGroup.get('campaignName')?.touched && formGroup.get('campaignName')?.invalid">
+      Campaign name is required.
+    </div>
+  
+    <label>Start Date</label>
+    <input type="date" formControlName="startDate" />
+    <div class="validation-error" *ngIf="formGroup.get('startDate')?.touched && formGroup.get('startDate')?.invalid">
+      Start date is required.
+    </div>
+  </div>
+  

@@ -1,0 +1,25 @@
+<div class="tabs">
+  <button (click)="currentTab = 'campaign-setup'" [class.active]="currentTab === 'campaign-setup'">Campaign Setup {{step1}}</button>
+  <button (click)="currentTab = 'creative-specs'" [class.active]="currentTab === 'creative-specs'">Creative Specs {{step2}}</button>
+  <button (click)="currentTab = 'contextual-triggers'" [class.active]="currentTab === 'contextual-triggers'">Contextual Triggers {{step3}}</button>
+</div>
+<form [formGroup]="campaignManagerForm">
+    <div *ngIf="currentTab === 'campaign-setup'">
+        <app-campaign-setup [formGroup]="campaignSetupGroup"></app-campaign-setup>
+    </div>
+
+    <div *ngIf="currentTab === 'creative-specs'">
+        <app-creative-specifications [formGroup]="creativeSpecsGroup"></app-creative-specifications>
+    </div>
+
+    <div *ngIf="currentTab === 'contextual-triggers'">
+        <app-contextual-triggers [formGroup]="contextualTriggersGroup"></app-contextual-triggers>
+    </div>
+
+    <div *ngIf="currentTab === 'contextual-triggers'">
+        <button type="submit" class="btn btn-primary" (click)="submitAll()">Submit</button>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="saveAsDraft()">Save As Draft</button>
+</form>
+  
