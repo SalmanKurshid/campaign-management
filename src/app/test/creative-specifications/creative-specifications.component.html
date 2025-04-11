@@ -1,13 +1,16 @@
-<div [formGroup]="formGroup">
-    <label>Ad Type</label>
-    <input formControlName="adType" />
-    <div class="validation-error" *ngIf="formGroup.get('adType')?.touched && formGroup.get('adType')?.invalid">
-        Ad type is required.
+ <div [formGroup]="formGroup" class="form-wrapper">
+    <div class="form-group">
+        <label>Ad Type</label>
+        <input formControlName="adType" />
+        <div class="validation-error" *ngIf="formGroup.get('adType')?.touched && formGroup.get('adType')?.invalid">
+            Ad type is required.
+        </div>
     </div>
-
-    <label>Dimensions</label>
-    <input formControlName="dimensions" />
-    <div class="validation-error" *ngIf="formGroup.get('dimensions')?.touched && formGroup.get('dimensions')?.invalid">
-        Dimensions are required.
+    <div class="form-group">
+        <label>Dimensions</label>
+        <input formControlName="dimensions" />
+        <div class="validation-error" *ngIf="formGroup.get('dimensions')?.touched && formGroup.get('dimensions')?.invalid">
+            Dimensions are required.
+        </div>
     </div>
 </div>

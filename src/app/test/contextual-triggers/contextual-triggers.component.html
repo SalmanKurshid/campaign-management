@@ -1,14 +1,17 @@
-<div [formGroup]="formGroup">
-    <label>Trigger Type</label>
-    <input formControlName="triggerType" />
-    <div class="validation-error" *ngIf="formGroup.get('triggerType')?.touched && formGroup.get('triggerType')?.invalid">
-      Trigger type is required.
+<div [formGroup]="formGroup" class="form-wrapper">
+    <div class="form-group">
+      <label>Trigger Type</label>
+      <input formControlName="triggerType" />
+      <div class="validation-error" *ngIf="formGroup.get('triggerType')?.touched && formGroup.get('triggerType')?.invalid">
+        Trigger type is required.
+      </div>
     </div>
-  
-    <label>Trigger Value</label>
-    <input formControlName="triggerValue" />
-    <div class="validation-error" *ngIf="formGroup.get('triggerValue')?.touched && formGroup.get('triggerValue')?.invalid">
-      Trigger value is required.
+    <div class="form-group">
+      <label>Trigger Value</label>
+      <input formControlName="triggerValue" />
+      <div class="validation-error" *ngIf="formGroup.get('triggerValue')?.touched && formGroup.get('triggerValue')?.invalid">
+        Trigger value is required.
+      </div>
     </div>
   </div>
   
